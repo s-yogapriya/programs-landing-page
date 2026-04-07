@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+    <title>Calculator Using Seperate JavaScript</title>
+</head>
+<script src="aod.js"></script>
+<script src="aom.js"></script>
+<script src="aop.js"></script>
+<script src="aomul.js"></script>
+<script src="aomod.js"></script>
+<script src="aopow.js"></script>   
+</script>
+<body>
+    <h1>Calculator - using seperate js file functions</h1>
+    <table border="1">
+        <tr>
+            <td>First Number</td>
+            <td>
+                <input 
+                type="number" 
+                id="numfn" 
+                placeholder="0.0"
+                step="any"
+                />
+            </td>
+        </tr>
+        <tr>
+            <td>Second Number</td>
+            <td>
+                <input 
+                type="number" 
+                id="numsn" 
+                placeholder="0.0"
+                step="any"
+                />
+            </td>
+        </tr>
+        <tr>
+            <td>Result</td>
+            <td>
+                <input 
+                type="number" 
+                id="numres" 
+                placeholder="0.0"
+                step="any"
+                />
+            </td>
+        </tr>     
+        <tr colspan="2">
+            <td>
+                <input 
+                type="button"
+                value="cancel"
+                onclick="location.href='p005calc1.html';"
+                />
+                <input 
+                type="button"
+                value="+"
+                onclick="btnPlus_onclick();"
+                />
+                <input 
+                type="button"
+                value="-"
+                onclick="btnMinus_onclick();"
+                />
+                <input 
+                type="button"
+                value="*"
+                onclick="btnMultiply_onclick();"
+                />
+                   <input 
+                type="button"
+                value="/"
+                onclick="btnDivision_onclick();"
+                />
+                <input 
+                type="button"
+                value="%"
+                onclick="btnModulo_onclick();"
+                />
+                <input 
+                type="button"
+                value="^"
+                onclick="btnPower_onclick();"
+                />
+            </td>
+        </tr>    
+    </table>
+</body>
+</html>

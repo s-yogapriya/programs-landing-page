@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<!--file name: combobox6.html-->
+<head>
+    <title>combobox using alert</title>
+</head>
+<script>
+    function cmbbxcc_onchange(){
+    alert("Welcome " + cmbbxcc.value);
+    // location.href='combobox6.html';
+}
+</script>
+<select id="cmbbxcc" oninput="cmbbxcc_onchange();">
+    <option value="AGRICULTURE">Agriculture</option>
+    <option value="DOMESTIC">Domestic</option>
+    <option value="COMMERCIAL" selected="selected">Commercial</option>
+</select>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <title>Checking Numeric Value using Checkbox</title>
+</head>
+<script>
+    function btnFind_onclick(){
+        var num=0;
+        num=tbxn.value;
+        num=parseFloat(num);
+        if(isNaN(num)){
+            chkbxv.checked=false;
+            spanv.innerText="InValid";
+        }
+        else{
+            chkbxv.checked=true;
+            spanv.innerText="Valid";
+        }
+    }
+</script>
+<body>
+    <h1>Find given input value is numeric or not (Checkbox)</h1>
+    <table border="1">
+    <tr>
+            <td>Enter the numeric value</td>
+            <td>
+                <input 
+                type="text" 
+                id="tbxn" 
+                placeholder="0.0"
+                />
+            </td>
+        </tr>
+        <tr>
+            <td>Is Valid</td>
+            <td>
+                <input 
+                type="checkbox" 
+                id="chkbxv" 
+                disabled="disabled"/>
+                <span id="spanv">InValid</span>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input 
+                type="button"
+                value="Cancel"
+                onclick="location.href='isnumeric2.html';"/>
+            </td>
+             <td>
+                <input 
+                type="button"
+                value="Find"
+                onclick="btnFind_onclick();"/>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

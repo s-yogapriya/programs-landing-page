@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<script>
+var params=new URL(window.location.href).searchParams;
+if (params.get('tbxun')=="Admin"){
+    if(params.get('upwd')=="1234"){
+        location.href="success.html";
+    }
+    else{
+        alert("invalid Password");
+        location.href="failure.html";
+    }
+}
+else{
+    alert("invalid Username");    
+    location.href="failure.html";
+    }
+</script>
+</html>
+

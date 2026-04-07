@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <title>Checking Numeric Value using textbox</title>
+</head>
+<script>
+    function btnFind_onclick(){
+        var num=0, val="";
+        num=tbxn.value;
+        num=parseFloat(num);
+        num = isNaN(num) ?   val="InValid" : val="Valid" ;
+        tbxop.value=val;
+    }
+</script>
+<body>
+    <h1>Find given input value is numeric or not (Textbox)</h1>
+    <table border="1">
+    <tr>
+            <td>Enter the numeric value</td>
+            <td>
+                <input 
+                type="text" 
+                id="tbxn" 
+                placeholder="0.0"
+                />
+            </td>
+        </tr>
+        <tr>
+            <td>Is Valid</td>
+            <td>
+                <input 
+                type="text" 
+                id="tbxop" 
+                placeholder="Invalid"
+                readonly="true"
+                />
+            </td>
+            
+        </tr>
+        <tr>
+            <td>
+                <input 
+                type="button"
+                value="Cancel"
+                onclick="location.href='isnumeric3.html';"/>
+            </td>
+             <td>
+                <input 
+                type="button"
+                value="Find"
+                onclick="btnFind_onclick();"/>
+            </td>
+        </tr>
+    </table>
+</body>

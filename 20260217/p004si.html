@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    <title>Simple Interest Calculator</title>
+</head>
+<script>
+    function btnFind_onclick(){
+        var p=0, n=0, r=0, si=0;
+        p=numpa.value;
+        p=parseFloat(p);
+        p=isNaN(p) ? 0 : p;
+
+        n=numny.value;
+        n=parseFloat(n);
+        n=isNaN(n) ? 0 : n;
+
+        r=numri.value;
+        r=parseFloat(r);
+        r=isNaN(r) ? 0 :r;
+
+        si=(p*n*r)/100;
+        numpa.value=p;
+        numny.value=n;
+        numri.value=r;
+        numsi.value=si;
+    }
+</script>
+<body>
+    <h1>Simple Interest</h1>
+    <table border="1">
+        <tr>
+            <td>Principle Amount</td>
+            <td>
+                <input 
+                type="number"
+                id="numpa"
+                placeholder="0"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Number of years</td>
+            <td>
+                <input 
+                type="number"
+                id="numny"
+                placeholder="0"/>
+            </td>
+        </tr>
+          <tr>
+            <td>Rate of Interest</td>
+            <td>
+                <input 
+                type="number"
+                id="numri"
+                placeholder="0"
+                step="any"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Simple Interest</td>
+            <td>
+                <input 
+                type="number"
+                id="numsi"
+                placeholder="0"
+                step="any"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input 
+                type="button"
+                value="cancel"
+                onclick="location.href='p004si.html';"/>
+            </td>
+            <td>
+                <input 
+                type="button"
+                value="Find"
+                onclick="btnFind_onclick()";/>
+            </td>          
+        </tr>
+    </table>
+</body>
+</html>

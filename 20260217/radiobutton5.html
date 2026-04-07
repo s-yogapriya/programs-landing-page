@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<head>
+    <title>Cool Drinks Radiobutton Example</title>
+</head>
+<body>
+    <h1>Radiobutton GUI Components (Drinks)</h1>
+    <table border="1">
+        <tr>
+            <td>Hot Drink</td>
+            <td>
+                <input 
+                type="radio"
+                name="htodrinks"
+                id="rdobtncoffee"
+                
+                />Coffee
+                <input 
+                type="radio"
+                name="htodrinks"
+                id="rdobtntea"
+                
+                />Tea
+                 <input 
+                type="radio"
+                name="htodrinks"
+                id="rdobtnmilk"
+               
+                />Milk
+            </td>
+        </tr>
+         <tr>
+            <td>Cool Drink</td>
+            <td>
+                <input 
+                type="radio"
+                name="cooldrinks"
+                id="rdobtn7up"
+                
+                />7 Up
+                <input 
+                type="radio"
+                name="cooldrinks"
+                id="rdobtnpepsi"
+                
+                />Pepsi
+                 <input 
+                type="radio"
+                name="cooldrinks"
+                id="rdobtncoke"
+              
+                />Coke
+        <tr>
+            <td>Soft Drink</td>
+            <td>
+                <input 
+                type="radio"
+                name="softdrinks"
+                id="rdobtnorange"
+                
+                />Orange
+                <input 
+                type="radio"
+                name="softdrinks"
+                id="rdobtnapple" 
+                       
+                />Apple
+                 <input 
+                type="radio"
+                name="softdrinks"
+                id="rdobtngraphs"
+               
+                />Graphs
+            </td>
+        </tr>
+            <tr>
+            <td>Hot Drink</td>
+            <td>
+              <input 
+                type="text"
+                id="tbxhd"
+                readonly="readonly"
+               />
+            </td>
+        </tr>
+        <tr>
+            <td>Cool Drink</td>
+            <td>
+                <input 
+                type="text"
+                id="tbxcd"
+                readonly="readonly"
+               />
+            </td>
+        <tr>
+            <td>Soft Drink</td>
+            <td>
+               <input 
+                type="text"
+                id="tbxsd"
+                readonly="readonly"
+               />
+            </td>
+        </tr>
+         <tr>
+            <td>
+                <input 
+                type="button"
+                value="Cancel"
+                onclick="location.href='radiobutton3.html';"
+                />
+            </td>
+            <td>
+                <input 
+                type="button"
+                value="Find"
+                onclick="btnFind_onclick();"
+                />
+            </td>
+        </tr>
+    </table>
+    
+</body>
+<script>
+   function btnFind_onclick(){
+    var res1="",res2="",res3="";
+    res1=tbxhd.value;   
+    res2=tbxcd.value;
+    res3=tbxsd.value;
+    res1=rdobtncoffee.checked ? "Coffee" : rdobtntea.checked ? "Tea" : rdobtnmilk.checked ? "Milk" : "Nothing Selected" ;
+    res2=rdobtn7up.checked ? "7 Up" : rdobtnpepsi.checked ? "Pepsi" : rdobtncoke.checked ? "Coke" : "Nothing Selected" ;        
+    res3=rdobtnorange.checked ? "Orange" : rdobtnapple.checked ? "Apple" : rdobtngraphs.checked ? "Graphs" : "Nothing Selected" ;
+    tbxhd.value=res1;   
+    tbxcd.value=res2;
+    tbxsd.value=res3;
+
+   }
+</script>
+
+
+</html>

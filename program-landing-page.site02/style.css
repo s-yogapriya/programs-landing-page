@@ -1,0 +1,12 @@
+ol{
+    /* margin-left:0; */
+    padding-left: 20px;
+    color:blue;
+}
+li{
+    padding-bottom:10px;
+}
+a{
+    text-decoration: none;
+    color:blue;
+}

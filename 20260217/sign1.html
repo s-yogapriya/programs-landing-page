@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <title>Checking Signature of Number</title>
+</head>
+<script>
+    function btnFind_onclick(){
+        var num=0, val="";
+        num=numn.value;
+        num=parseFloat(num);
+        if(num>0){   //Checking Positive
+            val="Positive";
+        }
+        else if(num<0){     //Checking Negative
+            val="Negative";
+        }
+        else{               //It's Only Check Zero
+            val="Neutral"
+        }
+        
+        tbxop.value=val;
+
+    }
+</script>
+<body>
+    <h1>Develop signature feature (Textbox)</h1>
+    <table border="1">
+    <tr>
+            <td>Enter the numeric value</td>
+            <td>
+                <input 
+                type="number" 
+                id="numn" 
+                placeholder="0.0"
+                />
+            </td>
+        </tr>
+        <tr>
+            <td>Signature</td>
+            <td>
+                <input 
+                type="text" 
+                id="tbxop" 
+                placeholder="Output"
+                readonly="true"
+                />
+            </td>
+            
+        </tr>
+        <tr>
+            <td>
+                <input 
+                type="button"
+                value="Cancel"
+                onclick="location.href='sign1.html';"/>
+            </td>
+             <td>
+                <input 
+                type="button"
+                value="Find"
+                onclick="btnFind_onclick();"/>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

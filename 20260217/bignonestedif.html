@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+    <title>Find Biggest Number Using Nested if</title>
+</head>
+
+<script>
+
+function btnFind_onclick(){
+
+var no1, no2, no3, bigno=0;
+
+no1=num1.value;
+no1=parseFloat(no1);
+no1=isNaN(no1) ? 0 : no1;
+
+no2=num2.value;
+no2=parseFloat(no2);
+no2=isNaN(no2) ? 0 : no2;
+
+no3=num3.value;
+no3=parseFloat(no3);
+no3=isNaN(no3) ? 0 : no3;
+bigno=parseFloat(numbigno.value);
+
+if(no1 > no2 && no1 > no3 ){
+bigno=no1;
+}
+if(no2 > no1 && no2 > no3 ){
+bigno=no2;
+}
+else{
+bigno=no3;
+}
+
+num1.value=no1;
+num2.value=no2;
+num3.value=no3;
+numbigno.value=bigno;
+
+}
+
+</script>
+<body>
+    <h1>Find big number between 3 numbers-(Method-2)</h1>
+    <table border="1">
+        <tr>
+            <td>First Number</td>
+            <td>
+                <input 
+                type="number"
+                step="any"
+                id="num1"
+                placeholder="0.0"
+                />
+            </td>
+        </tr>
+
+         <tr>
+            <td>Second Number</td>
+            <td>
+                <input 
+                type="number"
+                step="any"
+                id="num2"
+                placeholder="0.0"
+                />
+            </td>
+        </tr>
+
+       <tr>
+            <td>Third Number</td>
+            <td>
+                <input 
+                type="number"
+                step="any"
+                id="num3"
+                placeholder="0.0"
+                />
+            </td>
+        </tr>
+          <tr>
+            <td>Biggest Number is</td>
+            <td>
+                <input 
+                type="number"
+                id="numbigno"
+                placeholder="0.0"
+                readonly="readonly"
+                />
+            </td>
+        </tr>
+        <tr>
+            <td>
+           <input 
+            type="button"
+            value="Cancel"
+            onclick="location.href='bignoifelseif.html';"
+            />
+            </td>
+            <td>
+            <input 
+            type="button"
+            value="Find"
+            onclick="btnFind_onclick();"
+            />
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+ 

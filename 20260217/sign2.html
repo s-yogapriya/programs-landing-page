@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <title>Checking Signature of Number using Radio button</title>
+</head>
+<script>
+    function btnFind_onclick(){
+        var num=0, val="";
+        num=numn.value;
+        num=parseFloat(num);
+        if(num>0){   //Checking Positive
+            rdobtnpositive.checked=true;
+        }
+        else if(num<0){     //Checking Negative
+            rdobtnnegative.checked=true;
+        }
+        else{               //It's Only Check Zero
+            rdobtnneutral.checked=true;
+        }
+        
+        tbxop.value=val;
+
+    }
+</script>
+<body>
+    <h1>Develop signature feature (Radiobutton)</h1>
+    <table border="1">
+    <tr>
+            <td>Enter the numeric value</td>
+            <td>
+                <input 
+                type="number" 
+                id="numn" 
+                placeholder="0.0"
+                />
+            </td>
+        </tr>
+        <tr>
+            <td>Signature</td>
+            <td>
+                <input 
+                type="radio" 
+                id="rdobtnnegative" 
+                disabled="disabled"
+                />Negative
+                <input 
+                type="radio" 
+                id="rdobtnneutral" 
+                disabled="disabled"
+                />Neutral
+                <input 
+                type="radio" 
+                id="rdobtnpositive" 
+                disabled="disabled"
+                />Positive
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input 
+                type="button"
+                value="Cancel"
+                onclick="location.href='sign2.html';"/>
+            </td>
+             <td>
+                <input 
+                type="button"
+                value="Find"
+                onclick="btnFind_onclick();"/>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

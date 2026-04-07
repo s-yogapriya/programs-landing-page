@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Multiply:Target
+    </title>
+</head>
+<div id="dvop">wait...</div>
+<a href="mtqs1ip.html">Home</a>
+<script>
+    var params=new URL(window.location.href).searchParams;
+    document.write('<br><br>QueryString:', params);
+    var mn=params.has('nummn') ? params.get('nummn') : 0;
+    mn=parseInt(mn);
+    mn=isNaN(mn)?0:mn;
+    document.write('<br>QueryString value:',mn);
+    var op="";
+    for(let i=1;i<=20;i++){
+        op += i + "X" + mn + "=" + (i*mn) + "<br>"; 
+    }
+    dvop.innerHTML=op;
+</script>
+</html>

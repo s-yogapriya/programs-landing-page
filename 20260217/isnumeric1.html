@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <title>Checking Numeric Value</title>
+</head>
+<script>
+    function btnFind_onclick(){
+        var num=0;
+        num=tbxn.value;
+        num=parseFloat(num);
+        num = isNaN(num) ?  rdobtnNo.checked=true : rdobtnYes.checked=true ;
+    }
+</script>
+<body>
+    <h1>Find given input value is numeric or not (Radiobutton)</h1>
+    <table border="1">
+    <tr>
+            <td>Enter the numeric value</td>
+            <td>
+                <input 
+                type="text" 
+                id="tbxn" 
+                placeholder="0.0"
+                />
+            </td>
+        </tr>
+        <tr>
+            <td>Is Valid</td>
+            <td>
+                <input 
+                type="radio" 
+                id="rdobtnYes" 
+                disabled="disabled"/>Yes
+                <input 
+                type="radio" 
+                id="rdobtnNo" 
+                disabled="disabled"/>No
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input 
+                type="button"
+                value="Cancel"
+                onclick="location.href='isnumeric1.html';"/>
+            </td>
+             <td>
+                <input 
+                type="button"
+                value="Find"
+                onclick="btnFind_onclick();"/>
+            </td>
+        </tr>
+    </table>
+</body>

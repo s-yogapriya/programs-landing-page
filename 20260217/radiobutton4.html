@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>
+    <title>Cool Drinks Radiobutton Example</title>
+</head>
+<body>
+    <h1>Radiobutton with Example-2</h1>
+    <table border="1">
+        <tr>
+            <td>Morning Class</td>
+            <td>
+                <input 
+                type="radio"
+                name="morning"
+                id="rdobtnp1"
+                />Present
+
+                <input 
+                type="radio"
+                name="morning"
+                id="rdobtnab2"
+                />Absent
+            </td>
+        </tr>
+        <tr>
+            <td>Afternoon Class</td>
+            <td>
+                <input 
+                type="radio"
+                name="afternoon"
+                id="rdobtnp3"
+                />Present
+
+                <input 
+                type="radio"
+                name="afternoon"
+                id="rdobtnab4"
+                />Absent
+            </td>
+        </tr>
+        <tr>
+            <td>Morning Class</td>
+            <td>
+              <input 
+                type="text"
+                id="tbxop1"
+                readonly="readonly"
+                placeholder="Nothing Selected"
+               />
+            </td>
+        </tr>
+         <tr>
+            <td>Afternoon Class</td>
+            <td>
+              <input 
+                type="text"
+                id="tbxop2"
+                readonly="readonly"
+                placeholder="Nothing Selected"
+               />
+            </td>
+        </tr>
+         <tr>
+            <td>
+                <input 
+                type="button"
+                value="Cancel"
+                onclick="location.href='radiobutton4.html';"
+                />
+            </td>
+            <td>
+                <input 
+                type="button"
+                value="Find"
+                onclick="btnFind_onclick();"
+                />
+            </td>
+        </tr>
+    </table>
+    
+</body>
+<script>
+   function btnFind_onclick(){
+    var res1="";
+    var res2="";
+    res1=tbxop1.value;
+    res2=tbxop2.value;
+    res1=rdobtnp1.checked ? "Present" : rdobtnab2.checked ? "Absent" : "Nothing Selected" ;
+    res2=rdobtnp3.checked ? "Present" : rdobtnab4.checked ? "Absent" : "Nothing Selected" ;
+    tbxop1.value=res1;
+    tbxop2.value=res2;
+
+   }
+</script>
+
+
+</html>

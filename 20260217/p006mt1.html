@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <title>Multiplication Table</title>
+</head>
+<script>
+    function btnFind(){
+        var num=nummn.value;
+        num=parseFloat(num);
+        num=isNaN(num) ? 0 : num;
+
+        var op="";
+
+        for(var i=1;i<=20;i++){
+            op += i + "*"+ num + "=" + i*num + "<br>";
+        }
+        divop.innerHTML = op;       
+    }
+</script>
+<body>
+    <table border="1">
+        <tr>
+            <td>Multiplication Number</td>
+            <td>
+                <input 
+                type="number" 
+                id="nummn" 
+                placeholder="0"
+                />
+            </td>
+        </tr>  
+        <tr> 
+            <td>
+                <input 
+                type="button"
+                value="cancel"
+                onclick="location.href='p006mt1.html';"
+                />
+            </td>
+            <td>
+                <input 
+                type="button"
+                value="Find"
+                onclick="btnFind();" 
+                />
+            </td>
+        </tr> 
+        <tr>
+            <td colspan="2">
+                <div 
+                id="divop">
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

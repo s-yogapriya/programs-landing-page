@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<head>
+    <title>EB Bill</title>
+    <script src="p0010eb.js"></script>
+    <script src="p0010eb1.js"></script>
+    <link rel="stylesheet" href="p0010eb.css">
+
+</head>
+<body>
+    <h1>EB Bill</h1>
+    <table border="1">
+        <tr>
+            <td>Cunsumer ID</td>
+            <td>
+                <input 
+                type="number"
+                id="tbxcid"
+                placeholder="xxx"
+                />
+            </td>
+        </tr>
+         <tr>
+            <td>Previous Reading</td>
+            <td>
+                <input 
+                type="number"
+                id="numpr"
+                placeholder="0"
+                />
+            </td>
+        </tr>
+          <tr>
+            <td>Current Reading</td>
+            <td>
+                <input 
+                type="number"
+                id="numcr"
+                placeholder="0"
+                />
+            </td>
+        </tr>
+        <tr>
+            <td>Consumer Category</td>
+            <td>
+              <select id="cmbbxcc">
+                <option value="Agriculture">Agriculture</option>
+                <option value="Domestic">Domestic</option>
+                <option value="Commercial">Commercial</option>
+              </select>
+            </td>
+        </tr>
+        </tr>
+          <tr>
+            <td>Net Reading</td>
+            <td>
+                <input 
+                type="number"
+                id="numnr"
+                placeholder="0"
+                readonly="readonly"
+                />
+            </td>
+        </tr>
+         <tr>
+            <td>
+                <input 
+                type="button"
+                value="Cancel"
+                onclick="location.href='p0010eb.html';"
+                />
+            </td>
+            <td>
+                <input 
+                type="button"
+                value="Find"
+                onclick="btnFind_onclick();"
+                />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <table border="1">
+                        <th>Units Group</th>
+                        <th>Consume Units</th>
+                        <th>Per Unit Amount</th>                   
+                        <th>Consume Units Amount</th>                  
+            </td>
+        </tr>
+        <tr>
+            <td>000-100</td>
+            <td>
+                <input 
+                type="number"
+                id="numcuu100"
+                readonly="readonly"
+                placeholder="0.0"
+                />
+            </td>
+            <td>
+                <input 
+                type="number"
+                id="numpuau100"
+                readonly="readonly"
+                placeholder="0.0"
+                />
+            </td>
+            <td>
+                <input 
+                type="number"
+                id="numcuau100"
+                readonly="readonly"
+                placeholder="0.0"
+                />
+            </td>
+        </tr>
+        <tr>
+            <td>101-200</td>
+            <td>
+                <input 
+                type="number"
+                id="numcuu200"
+                readonly="readonly"
+                placeholder="0.0"
+                />
+            </td>
+            <td>
+                <input 
+                type="number"
+                id="numpuau200"
+                readonly="readonly"
+                placeholder="0.0"
+                />
+            </td>
+            <td>
+                <input 
+                type="number"
+                id="numcuau200"
+                readonly="readonly"
+                placeholder="0.0"
+                />
+            </td>
+        </tr>
+        <tr>
+            <td>201-400</td>
+            <td>
+                <input 
+                type="number"
+                id="numcuu400"
+                readonly="readonly"
+                placeholder="0.0"
+                />
+            </td>
+            <td>
+                <input 
+                type="number"
+                id="numpuau400"
+                readonly="readonly"
+                placeholder="0.0"
+                />
+            </td>
+            <td>
+                <input 
+                type="number"
+                id="numcuau400"
+                readonly="readonly"
+                placeholder="0.0"
+                />
+            </td>
+        </tr>
+        <tr>
+            <td>400-...</td>
+            <td>
+                <input 
+                type="number"
+                id="numcua400"
+                readonly="readonly"
+                placeholder="0.0"
+                />
+            </td>
+            <td>
+                <input 
+                type="number"
+                id="numpuaa400"
+                readonly="readonly"
+                placeholder="0.0"
+                />
+            </td>
+            <td>
+                <input 
+                type="number"
+                id="numcuaa400"
+                readonly="readonly"
+                placeholder="0.0"
+                />
+            </td>
+        </tr>
+            
+        </table>
+        <tr>
+            <td>Tax (%)</td>
+            <td>
+                <input 
+                type="number"
+                id="numtip"
+                readonly="readonly"
+                placeholder="0.0"
+                />
+            </td>
+        </tr>
+         <tr>
+            <td>Tax Amount</td>
+            <td>
+                <input 
+                type="number"
+                id="numtia"
+                readonly="readonly"
+                placeholder="0.0"
+                />
+            </td>
+        </tr>
+             <tr>
+            <td>Meter Charge</td>
+            <td>
+                <input 
+                type="number"
+                id="nummc"
+                readonly="readonly"
+                placeholder="0.0"
+                />
+            </td>
+        </tr>
+         <tr>
+            <td>Net Pay</td>
+            <td>
+                <input 
+                type="number"
+                id="numnp"
+                readonly="readonly"
+                placeholder="0.0"
+                />
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

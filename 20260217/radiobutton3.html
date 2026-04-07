@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+    <title>Cool Drinks Radiobutton Example</title>
+</head>
+<body>
+    <h1>Radiobutton with Example-1</h1>
+    <table border="1">
+        <tr>
+            <td>Hot Drink</td>
+            <td>
+                <input 
+                type="radio"
+                name="output"
+                id="rdobtncoffee"
+                
+                />Coffee
+                <input 
+                type="radio"
+                name="output"
+                id="rdobtntea"
+                
+                />Tea
+                 <input 
+                type="radio"
+                name="output"
+                id="rdobtnmilk"
+                />Milk
+            </td>
+        </tr>
+            <tr>
+            <td>Hot Drink</td>
+            <td>
+              <input 
+                type="text"
+                id="tbxhd"
+                readonly="readonly"
+                placeholder="Nothing Selected"
+               />
+            </td>
+        </tr>
+         <tr>
+            <td>
+                <input 
+                type="button"
+                value="Cancel"
+                onclick="location.href='radiobutton3.html';"
+                />
+            </td>
+            <td>
+                <input 
+                type="button"
+                value="Find"
+                onclick="btnFind_onclick();"
+                />
+            </td>
+        </tr>
+    </table>
+    
+</body>
+<script>
+   function btnFind_onclick(){
+    var res="";
+    res=tbxhd.value;
+    res=rdobtncoffee.checked ? "Coffee" : rdobtntea.checked ? "Tea" : "Milk" ;
+    tbxhd.value=res;
+
+   }
+</script>
+
+
+</html>
